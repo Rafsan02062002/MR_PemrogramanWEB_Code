@@ -1,0 +1,93 @@
+<style>
+/* Properti Body */
+body { 
+ font-family: Arial, sans-serif; 
+ margin: 0; 
+ padding: 0; 
+} 
+
+/* Properti Header */
+header { 
+ background-color: #280872; 
+ color: #fff; 
+ padding: 10px; 
+ text-align: center; 
+} 
+
+/* Properti Navigasi */
+header nav ul { 
+ list-style-type: none; 
+ padding: 0; 
+} 
+header nav ul li { 
+ display: inline; 
+ margin: 0px 10px; 
+ border-right: 1px dotted #f9f9f9; 
+ padding-right: 20px; 
+} 
+
+/* Hover navigasi dengan animasi */
+header nav ul li a:hover { 
+ font-weight: bold; 
+ color: #f39c12;
+ transition: color 0.3s ease;
+} 
+
+/* Properti Link Navigasi */
+header nav ul li a { 
+ color: #fff; 
+ text-decoration: none; 
+} 
+
+/* Properti Section */
+section { 
+ padding: 50px 0; 
+ text-align: center; 
+} 
+
+/* Pseudo-elemen before untuk judul */
+h2::before {
+ content: "☕ ";
+ color: #f39c12;
+}
+
+/* Container */
+.container { 
+ max-width: 900px; 
+ margin: auto; 
+}
+
+/* Properti Gambar Menu */
+.menu-item img { 
+ max-width: 40%; 
+ border-radius: 10px; 
+ transition: transform 0.3s ease; /* Animasi saat hover */
+}
+
+/* Hover pada gambar menu */
+.menu-item img:hover {
+ transform: scale(1.1); /* Membesarkan gambar saat hover */
+}
+
+/* Jam Operasional */
+#hours { 
+ background-color: #f9f9f9; 
+ padding: 50px 0; 
+} 
+
+#hours p { 
+ font-size: 18px; 
+ margin: 5px 0; 
+} 
+
+/* Footer */
+footer { 
+ background-color: #280872; 
+ color: #fff; 
+ text-align: center; 
+ padding: 10px; 
+ position: fixed; 
+ bottom: 0; 
+ width: 100%; 
+}
+</style>
