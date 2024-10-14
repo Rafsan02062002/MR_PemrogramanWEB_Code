@@ -1,0 +1,97 @@
+/* Reset margin dan padding untuk elemen dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mengatur font dan warna untuk seluruh body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Mengatur desain judul halaman dengan border di bawah */
+.judul {
+    color: #555;
+    border-bottom: 2px solid #038ade; /* Warna border yang lebih menarik */
+    padding-bottom: 15px;
+    margin-bottom: 20px; /* Spasi di bawah judul */
+}
+
+/* Mengatur agar lebar tabel penuh dan antara border tidak memiliki jarak */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+/* Menambahkan border dan padding pada sel tabel */
+.table th, .table td {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center; /* Rata tengah konten */
+}
+
+/* Mengatur background bagian judul tabel dan efek hover */
+.table th {
+    background: #eee;
+    position: relative; /* Menambahkan posisi relatif untuk pseudo-elemen */
+}
+
+/* Menambahkan pseudo-elemen untuk efek visual pada header tabel */
+.table th::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px; /* Tinggi garis di bawah header */
+    background: #038ade; /* Warna garis */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Mengatur desain tombol yang dibuat dengan tag <a> */
+.tombol {
+    display: inline-block;
+    max-width: 150px;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    background: #038ade;
+    border-radius: 5px; /* Menambahkan sudut membulat */
+    transition: background 0.3s; /* Transisi halus saat hover */
+}
+
+/* Mengatur efek hover pada tombol */
+.tombol:hover {
+    background: #026aab; /* Warna saat hover */
+}
+
+/* Desain tombol edit dan hapus agar lebih kecil */
+.tombol.edit, .tombol.hapus {
+    padding: 10px 15px;
+    font-size: 12px;
+}
+
+/* Mengatur warna tombol hapus */
+.tombol.hapus {
+    background: #fc4c4c;
+}
+
+/* Mengatur efek hover pada tombol hapus */
+.tombol.hapus:hover {
+    background: #d9534f; /* Warna saat hover */
+}
+
+/* Mengatur footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #038ade; /* Warna latar belakang footer */
+    color: #fff; /* Warna teks footer */
+    position: relative; /* Menambahkan posisi relatif untuk elemen lainnya */
+    bottom: 0; /* Memastikan footer berada di bawah */
+    width: 100%; /* Mengatur lebar footer */
+}
