@@ -1,0 +1,91 @@
+/* Halaman Form */
+/* Mengatur form-group agar tidak terpengaruh float */
+.form-group {
+    clear: both;
+    margin-bottom: 20px; /* Menambahkan jarak antar form group */
+}
+
+/* Mengatur lebar label 30% dengan teks bold */
+.form-group label {
+    display: block;
+    padding: 10px 0; /* Mengurangi padding untuk tampilan lebih ringkas */
+    float: left;
+    width: 30%;
+    font-weight: bold;
+    color: #333; /* Warna teks yang lebih gelap untuk kontras */
+}
+
+/* Mengatur lebar .input 50% dan sejajar dengan label */
+.form-group .input {
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+/* Menambahkan border dan padding pada input untuk tampilan lebih baik */
+.form-group .input input,
+.form-group .input select {
+    width: 100%; /* Mengatur lebar input penuh */
+    padding: 10px;
+    border: 1px solid #ccc; /* Warna border netral */
+    border-radius: 5px; /* Sudut melengkung untuk input */
+    transition: border-color 0.3s; /* Transisi border saat focus */
+}
+
+/* Mengatur efek focus pada input */
+.form-group .input input:focus,
+.form-group .input select:focus {
+    border-color: #038ade; /* Warna border saat focus */
+    outline: none; /* Menghilangkan outline default */
+}
+
+/* Mengatur input radio, tombol submit dan tombol reset */
+input[type=radio] {
+    width: 20px; /* Ukuran radio button lebih kecil */
+    margin-right: 10px; /* Jarak antara radio button dan label */
+}
+
+/* Tombol styling */
+.tombol {
+    padding: 10px 15px; /* Padding untuk tombol */
+    border: none; /* Menghilangkan border default */
+    color: white; /* Warna teks putih */
+    border-radius: 5px; /* Sudut melengkung untuk tombol */
+    cursor: pointer; /* Menambahkan pointer saat hover */
+    transition: background-color 0.3s; /* Transisi untuk background */
+}
+
+.tombol.simpan {
+    background: #038ade;
+}
+
+.tombol.reset {
+    background: #fb8307;
+}
+
+/* Efek hover untuk tombol */
+.tombol.simpan:hover {
+    background: #0273a8; /* Warna lebih gelap saat hover */
+}
+
+.tombol.reset:hover {
+    background: #e57300; /* Warna lebih gelap saat hover */
+}
+
+/* Footer styling */
+footer {
+    text-align: center; /* Tengah */
+    padding: 15px 0; /* Padding untuk footer */
+    background: #f1f1f1; /* Warna latar belakang footer */
+    margin-top: 20px; /* Jarak atas footer */
+    border-top: 1px solid #ccc; /* Garis atas footer */
+}
+
+/* Memebuat tampilan form menumpuk pada layar kecil */
+@media (max-width: 700px) {
+    .form-group label,
+    .form-group .input {
+        width: 100%; /* Memastikan elemen mengambil lebar penuh */
+        float: none; /* Menghilangkan float pada tampilan kecil */
+    }
+}
