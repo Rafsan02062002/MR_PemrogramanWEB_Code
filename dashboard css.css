@@ -1,0 +1,98 @@
+/* Layout */
+/* Mengatur desain header */
+header{
+    background: #280872;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 5px solid #1f064f;
+    transition: background 0.3s ease;
+}
+
+/* Hover untuk header */
+header:hover {
+    background: #3c0b9b;
+}
+
+/* Mengatur lebar menu 20% dengan background hitam */
+aside{
+    flex: 20%;
+    background: #222;
+    border-right: 2px solid #444;
+}
+
+/* Mengatur lebar konten utama 80% dengan background putih */
+section.main{
+    flex: 80%;
+    background: #fff;
+    min-height: 530px;
+    padding: 15px 20px;
+    flex-grow: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Mengatur footer dengan background abu-abu dan teks di tengah */
+footer{
+    background: #ccc;
+    color: #555;
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid #aaa;
+    transition: background 0.3s ease;
+}
+
+/* Hover untuk footer */
+footer:hover {
+    background: #bbb;
+}
+
+/* Mengatur layout pada layar kecil (responsive) */
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Navigasi */
+/* Membuang padding tag <ul> */
+.menu{
+    padding: 0;
+    margin: 0;
+}
+
+/* Menambah border bawah tag <li> */
+.menu li{
+    border-bottom: 1px dotted #444;
+}
+
+/* Mengatur desain menu yang dibuat dengan tag a */
+.menu a{
+    display: block;
+    padding: 20px 20px;
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Mengganti background menu ketika ditunjuk mouse */
+.menu a:hover{
+    background: #000;
+    color: #ffcc00;
+}
+
+/* Menambahkan pseudo-elemen dekoratif pada link menu */
+.menu a::before {
+    content: "► ";
+    color: #ffcc00;
+    font-size: 12px;
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Efek rotasi pada pseudo-elemen ketika hover */
+.menu a:hover::before {
+    transform: rotate(90deg);
+}
